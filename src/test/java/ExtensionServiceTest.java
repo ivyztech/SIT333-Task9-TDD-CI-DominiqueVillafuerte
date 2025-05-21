@@ -3,10 +3,13 @@ import org.junit.Test;
 
 public class ExtensionServiceTest {
 
+	@Test
 	public void testValidExtensionRequest() {
 	    ExtensionService service = new ExtensionService();
 	    boolean result = service.requestExtension("s12345", "8.1P", "Medical reason");
-	    Assert.assertFalse(result); // ❌ INTENTIONAL FAIL 
+	    
+	    // Make this assertion intentionally wrong
+	    Assert.assertFalse(result);  // This will now FAIL
 	}
 
     @Test
