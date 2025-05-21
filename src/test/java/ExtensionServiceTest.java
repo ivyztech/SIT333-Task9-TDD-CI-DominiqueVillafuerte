@@ -6,7 +6,7 @@ public class ExtensionServiceTest {
 	public void testValidExtensionRequest() {
 	    ExtensionService service = new ExtensionService();
 	    boolean result = service.requestExtension("s12345", "8.1P", "Medical reason");
-	    Assert.assertFalse(result); // ❌ INTENTIONAL FAIL
+	    Assert.assertFalse(result); // ❌ INTENTIONAL FAIL 
 	}
 
     @Test
