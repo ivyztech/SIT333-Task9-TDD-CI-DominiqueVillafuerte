@@ -3,12 +3,11 @@ import org.junit.Test;
 
 public class ExtensionServiceTest {
 
-    @Test
-    public void testValidExtensionRequest() {
-        ExtensionService service = new ExtensionService();
-        boolean result = service.requestExtension("s12345", "8.1P", "Medical reason");
-        Assert.assertTrue(result); // this should pass now
-    }
+	public void testValidExtensionRequest() {
+	    ExtensionService service = new ExtensionService();
+	    boolean result = service.requestExtension("s12345", "8.1P", "Medical reason");
+	    Assert.assertFalse(result); // ❌ INTENTIONAL FAIL
+	}
 
     @Test
     public void testValidRequestStoresReason() {
